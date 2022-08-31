@@ -14,3 +14,12 @@ const inventors = [
     {first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
     {first: 'Max', last: 'pLANCJ', year: 1858, passed: 1947 },
 ];
+
+const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick',
+                'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire',
+                'Bellow, Saul', 'Benchely, Robert', 'Benenson, Peter', 'Ben-gurion, David',
+                'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana',
+                'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergam, Ingmar', 'Berio, Luciano',
+                'Berle, Milton', 'Berlin, Irving', 'Berne, Erin', 'Bevan, Aneurin', 'Bevel, Ken',
+                'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank',
+                'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
