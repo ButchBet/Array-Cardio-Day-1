@@ -15,7 +15,7 @@ const inventors = [
     {first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
 ];
 
-const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick',
+const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick',
                 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire',
                 'Bellow, Saul', 'Benchely, Robert', 'Benenson, Peter', 'Ben-gurion, David',
                 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana',
@@ -76,6 +76,25 @@ const boulevardsInParisCategory = ['Boulevards of Paris', 'City walls of Paris',
                            'Boulevard Saint-Michel','Boulevard de Sébastopol','Boulevard de Strasbourg','Boulevard du Temple','Boulevard Voltaire',
                            'Boulevard de la Zone',];
 
-let boulevardsInParis = boulevardsInParisCategory.filter((e) => e.indexOf('de') != -1);
+let boulevardsInParis = boulevardsInParisCategory.filter((e) => e.includes("de"));
 console.group("List with the Boulevards in Paris that contain 'de' wnywhere in the name");
 console.table(boulevardsInParis);
+console.groupEnd();
+
+// 7. Sort Exersice
+// sort the people alphabetically by last name
+let sortedByLastName = people.sort((a, b) => a.split(', ')[0] - b.split(', ')[0]);
+console.group("People's information sorted by last name");
+console.table(sortedByLastName);
+console.groupEnd();
+
+// 8. Reduce Exercise
+// Sum up the instances of each of these
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck']
+let bike = data.filter((e) => e == 'bike').length;
+let car = data.filter((e) => e == 'car').length;
+let truck = data.filter((e) => e == 'truck').length;
+let van = data.filter((e) => e == 'van').length;
+let walk = data.filter((e) => e == 'walk').length;
+console.group('Instances of each vehicle');
+console.log('Bike: ' + bike, 'Car: ' + car, 'Truck: ' + truck, 'Van: ' + van, 'Walk: ' + walk);
